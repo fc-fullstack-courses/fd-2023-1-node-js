@@ -15,6 +15,8 @@ const PI = 3.14;
 //   exports: {}
 // }
 
+console.log('MyMath.js');
+
 // CommonJS exports
 module.exports.MyMath = MyMath;
 module.exports.PI = PI;
