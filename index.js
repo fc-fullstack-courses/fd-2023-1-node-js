@@ -1,4 +1,5 @@
 'use strict';
+// node ./path/to/file.js - запуск файла с помощью node js
 
 console.log(5 + 5);
 
