@@ -6,3 +6,15 @@ class MyMath {
     numbers.reduce((acc, number) => acc * number);
   static divide = (...numbers) => numbers.reduce((acc, number) => acc / number);
 }
+
+const value = false;
+
+const PI = 3.14;
+
+// const module = {
+//   exports: {}
+// }
+
+// CommonJS exports
+module.exports.MyMath = MyMath;
+module.exports.PI = PI;
