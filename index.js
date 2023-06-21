@@ -3,6 +3,5 @@
 
 console.log(5 + 5);
 
-const sum = (...numbers) => numbers.reduce((acc, number) => acc + number);
-
-console.log(sum(2, 5, 7, 10));
+console.log(MyMath.sum(5,10,20,30));
+console.log(MyMath.divide(500,2));
