@@ -24,5 +24,19 @@ const fs = require('fs/promises');
 
 fs.readFile('./require_working_algo.txt', 'utf-8').then((fileContent) => {
   console.log(fileContent);
+
+  const newText = `${fileContent}\nLorem Ipsum`;
+
+  fs.writeFile('./require_working_algo.txt', newText, 'utf-8');
 });
 
+/*
+  1. создать текстовый файлик, написать в нем что-то и с помощью ноды прочитать его содержимое
+
+  2. Создайте новую переменную с значением текста из файла, к которому добавили
+  в конец lorem ipsum. Сохраните новый текст в файл используя js.
+*/
+
+const obj = {};
+
+const newText = obj + 'Lorem';
