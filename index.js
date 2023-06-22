@@ -7,9 +7,13 @@
 // const { MyMath, PI } = result;
 
 const fs = require('fs/promises');
+const _ = require('lodash');
 // const fs2 = require('fs').promises;
 
 // console.log(fs);
+
+const randomNumber = _.random(5, 5000);
+console.log(randomNumber);
 
 // fs.readFile('./require_working_algo.txt').then((fileContent) => {
 //   const decodedText = Buffer.from(fileContent, 'utf-8').toString();
@@ -20,15 +24,15 @@ const fs = require('fs/promises');
 //   (fileContent) => {
 //     console.log(fileContent);
 //   }
-// );
+// // );
 
-fs.readFile('./require_working_algo.txt', 'utf-8').then((fileContent) => {
-  console.log(fileContent);
+// fs.readFile('./require_working_algo.txt', 'utf-8').then((fileContent) => {
+//   // console.log(fileContent);
 
-  const newText = `${fileContent}\nLorem Ipsum`;
+//   const newText = `${fileContent}\nLorem Ipsum`;
 
-  fs.writeFile('./require_working_algo.txt', newText, 'utf-8');
-});
+//   fs.writeFile('./require_working_algo.txt', newText, 'utf-8');
+// });
 
 /*
   1. создать текстовый файлик, написать в нем что-то и с помощью ноды прочитать его содержимое
