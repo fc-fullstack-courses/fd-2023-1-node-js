@@ -1,0 +1,19 @@
+{
+  "name": "fd-2023-1-node",
+  "version": "1.0.0",
+  "description": "For learning basic node js functionality",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fc-fullstack-courses/fd-2023-1-node-js.git"
+  },
+  "author": "Me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fc-fullstack-courses/fd-2023-1-node-js/issues"
+  },
+  "homepage": "https://github.com/fc-fullstack-courses/fd-2023-1-node-js#readme"
+}
