@@ -18,5 +18,6 @@ const PI = 3.14;
 console.log('MyMath.js');
 
 // CommonJS exports
+// именной экспорт, может использоватся многократно в файле
 module.exports.MyMath = MyMath;
 module.exports.PI = PI;

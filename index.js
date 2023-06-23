@@ -1,9 +1,9 @@
 'use strict';
 
 // CommonJS imports
+// именной импорт
 // const result = require('./MyMath');
 // const { Component } = require('./Component');
-// require('./src');
 // const { MyMath, PI } = result;
 
 const fs = require('fs/promises');
