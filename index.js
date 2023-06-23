@@ -2,9 +2,10 @@
 
 // CommonJS imports
 // именной импорт
-// const result = require('./MyMath');
-// const { Component } = require('./Component');
-// const { MyMath, PI } = result;
+// const { MyMath, PI } = require('./MyMath');
+
+// импортирование по умолчанию, не требует деструктуризации
+const Component = require('./Component'); 
 
 const fs = require('fs/promises');
 const _ = require('lodash');
@@ -13,7 +14,7 @@ const _ = require('lodash');
 // console.log(fs);
 
 const randomNumber = _.random(5, 5000);
-console.log(randomNumber);
+console.log(Component.test);
 
 // fs.readFile('./require_working_algo.txt').then((fileContent) => {
 //   const decodedText = Buffer.from(fileContent, 'utf-8').toString();
