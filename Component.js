@@ -1,4 +1,4 @@
-const { MyMath } = require('./MyMath.js');
+import { MyMath }from './MyMath.js';
 
 class Component {
   render() {
@@ -13,5 +13,10 @@ console.log('Component.js');
 MyMath.divide(5, 5);
 
 // CommonJS экспорт
-module.exports = Component; // экспортирование по умолчанию
+// module.exports = Component; // экспортирование по умолчанию
 // module.exports = 45; // используется не более 1 раза за модуль
+
+// ESModules exports
+// экспорт по умолчанию
+export default Component;
+// export default 45;

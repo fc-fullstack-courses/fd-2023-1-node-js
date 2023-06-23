@@ -11,7 +11,11 @@
 // именной импорт
 import { MyMath, PI, test, arr as func1 } from './MyMath.js';
 
-console.log(PI);
+// импортирование по умолчанию
+// import Component from './Component.js';
+import OtherName from './Component.js'; // с переименованием
+
+console.log(OtherName.test);
 
 func1();
 
