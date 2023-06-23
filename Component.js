@@ -20,3 +20,6 @@ MyMath.divide(5, 5);
 // экспорт по умолчанию
 export default Component;
 // export default 45;
+
+export const data = 1235;
+export const data2 = false;

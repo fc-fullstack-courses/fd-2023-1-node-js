@@ -13,11 +13,17 @@ import { MyMath, PI, test, arr as func1 } from './MyMath.js';
 
 // импортирование по умолчанию
 // import Component from './Component.js';
-import OtherName from './Component.js'; // с переименованием
+// import OtherName from './Component.js'; // с переименованием
 
-console.log(OtherName.test);
+// комбинирование импортов
+// import OtherName, { data, data2 as newData } from './Component.js';
 
-func1();
+// импорт всего
+import OtherName, * as ComponentImports from './Component.js';
+
+console.log(ComponentImports);
+
+// func1();
 
 // const fs = require('fs/promises');
 // const _ = require('lodash');
