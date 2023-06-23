@@ -19,5 +19,15 @@ console.log('MyMath.js');
 
 // CommonJS exports
 // именной экспорт, может использоватся многократно в файле
-module.exports.MyMath = MyMath;
-module.exports.PI = PI;
+// module.exports.MyMath = MyMath;
+// module.exports.PI = PI;
+
+// ESModules exports
+// именные экспорты 
+export { MyMath, PI};
+export function test () {
+  console.log('test');
+}
+export const arr = () => { console.log('arr')}
+export const SECRET = 'test';
+

@@ -5,16 +5,21 @@
 // const { MyMath, PI } = require('./MyMath');
 
 // импортирование по умолчанию, не требует деструктуризации
-const Component = require('./Component'); 
+// const Component = require('./Component');
 
-const fs = require('fs/promises');
-const _ = require('lodash');
+// ESModules imports
+// именной импорт
+import { MyMath, PI, test, arr as func1 } from './MyMath.js';
+
+console.log(PI);
+
+func1();
+
+// const fs = require('fs/promises');
+// const _ = require('lodash');
 // const fs2 = require('fs').promises;
 
 // console.log(fs);
-
-const randomNumber = _.random(5, 5000);
-console.log(Component.test);
 
 // fs.readFile('./require_working_algo.txt').then((fileContent) => {
 //   const decodedText = Buffer.from(fileContent, 'utf-8').toString();
